@@ -19,7 +19,7 @@ function setup() {
 }
 
 function draw() {
-  background('#77B5FE');
+  background('#8fd3f9');
 
   push();
   scale = 1;
@@ -39,7 +39,7 @@ function draw() {
   translate(400, 120);
   makePost();
   rotate(radians(frameCount * speed2));
-  if (mouseX > 300 && mouseX <= 600) {
+  if (mouseX > 300 && mouseX <= 540) {
     if (mouseIsPressed) {
       speed2 = random(6) + 1;
     }
@@ -52,7 +52,7 @@ function draw() {
   translate(655, 120);
   makePost();
   rotate(radians(frameCount * speed3));
-  if (mouseX > 600) {
+  if (mouseX > 540) {
     if (mouseIsPressed) {
       speed3 = random(6) + 1;
     }

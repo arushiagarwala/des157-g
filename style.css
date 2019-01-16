@@ -1,6 +1,9 @@
 body {
   font-family: 'Helvetica', 'Arial', sans-serif;
   background-color: #ffffff;
+  background-image: url("images/portal-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #000;
   height: inherit;
   margin: auto;
@@ -24,7 +27,7 @@ h1 {
   color: #A0522D;
   margin: 0;
   padding: 0;
-  padding-bottom: 50px;
+  padding-bottom: 200px;
 }
 
 #container {
@@ -36,14 +39,16 @@ h1 {
 
 section {
   margin-left: 10px;
+  margin-bottom: 100px;
 }
 
 h2 {
-  color: #77B5FE;
+  color: #fff;
 }
 
 section > section {
-  border: 1px solid #77B5FE;
+  border: 1px solid #422801;
+  background-color: #422801;
   padding-right: 20px;
   padding-left: 20px;
   padding-bottom: 20px;
@@ -58,11 +63,11 @@ ol,ul {
 a {
   font-size: 14px;
   text-decoration: none;
-  color: #000;
+  color: #9f5232;
 }
 
 a:hover {
-  color: red;
+  color: #8fd3f9;
 }
 
 footer {
