@@ -2,7 +2,6 @@ body {
   font-family: 'Helvetica', 'Arial', sans-serif;
   background-color: #ffffff;
   background-image: url("images/portal-background.png");
-  max-width: 1366px;
   background-repeat: no-repeat;
   background-size: cover;
   color: #000;
@@ -14,6 +13,7 @@ header {
   margin: auto;
   margin-top: 50px;
   width: 800px;
+  height: 650px;
 }
 
 #mySketch {
@@ -24,15 +24,20 @@ header {
 }
 
 h1 {
-  font-size: 90px;
-  color: #A0522D;
-  margin: 0;
+  width: 800px;
+  margin: auto;
   padding: 0;
-  padding-bottom: 200px;
+  text-align: center;
+}
+
+header img {
+  max-width: 800px;
 }
 
 #container {
   margin: auto;
+  padding: 0;
+  margin-top: 0;
   width: 800px;
   display: grid;
   grid-template-columns: auto auto auto;
