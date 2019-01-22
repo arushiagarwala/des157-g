@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Hind:300');
+
+body {
+  width: 80%;
+  height: inherit;
+  margin: auto;
+  margin-top: 3.5%;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+header {
+  width: 80%;
+  margin: auto;
+  height: inherit;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  padding-left: 15%;
+}
+
+header h1 {
+  font-family: 'Hind', sans-serif;
+  font-size: 0.8em;
+  text-align: left;
+  border-top: 1px black solid;
+  padding-top: 5%;
+}
+
+header img {
+  width: 50%;
+  height: inherit;
+  max-width: 500px;
+}
+
+section img {
+  width: 65%;
+  margin: auto;
+  margin-left: 20%;
+  height: inherit;
+  max-height: 600px;
+}
+
+a {
+  text-decoration: none;
+  color: #2a9fe2;
+}
+
+a:hover {
+  color: #f39c12;
+}
