@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700');
+
+body {
+  width: 80%;
+  height: inherit;
+  margin: auto;
+  display: grid;
+  font-family: 'Hind:300', sans-serif;
+  color: white;
+}
+
+h1 {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  font-size: 1em;
+  color: #003366;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-family: 'Hind:700', sans-serif;
+}
+
+section {
+  margin-bottom: 10%;
+  background: #ADD8E6;
+  padding: 4%;
+}
+
+section img {
+  width: 100%;
+  height: auto;
+  max-width: 1366px;
+  margin: auto;
+}
+
+section figcaption {
+  font-size: 0.8em;
+  padding-bottom: 2%;
+  padding-top: 0.2%;
+}
+
+section a {
+  text-decoration: none;
+  color: #2a9fe2;
+}
+
+section a:hover {
+  color: #f39c12;
+}
+
+section p {
+  width: 100%;
+  margin: auto;
+  font-size: 0.8em;
+  color: #003366;
+  padding-top: 1%;
+}
+
+figure {
+  border-bottom: 2px solid #003366;
+  margin: 0;
+}
