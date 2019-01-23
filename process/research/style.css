@@ -7,13 +7,16 @@ body {
   display: grid;
   font-family: 'Hind:300', sans-serif;
   color: white;
+  background-image: url("images/comparative-background.png");
+  background-repeat: repeat-y;
+  background-size: contain;
 }
 
 h1 {
   width: 100%;
   margin: auto;
   text-align: center;
-  font-size: 1em;
+  font-size: 1.4em;
   color: #003366;
   margin-top: 5%;
   margin-bottom: 5%;
@@ -46,7 +49,7 @@ section a {
 }
 
 section a:hover {
-  color: #f39c12;
+  color: #FF8C00;
 }
 
 section p {
@@ -65,7 +68,7 @@ figure {
 footer {
   width: 100%;
   height: 50px;
-  background-color: #fff;
+  /*background-color: #fff;*/
 }
 
 footer nav {
@@ -85,6 +88,10 @@ footer li a {
   display: block;
   color: #003366;
   text-decoration: none;
+}
+
+footer li a:hover {
+  color: #FF8C00;
 }
 
 ul {
