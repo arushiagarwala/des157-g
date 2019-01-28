@@ -1,0 +1,118 @@
+<!Doctype html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Arushi's Mad-Libs</title>
+    <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
+    <link rel = "stylesheet" href = "style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Painting with Bob</h1>
+    </header>
+
+    <section class = "container">
+    <section id = "madLib">
+      <form>
+        <fieldset>
+          <label for="measurement">Measurement:</label>
+          <input type="text" name="userName" id="measurement" required>
+        </fieldset>
+
+        <fieldset>
+          <label for="liquid">Choose a liquid!</label>
+          <div>
+            <input name="liquid" type="radio" value="soda" id = "liquid">
+            <label>soda</label>
+            <br>
+
+            <input name="liquid" type="radio" value="ketchup" id = "liquid">
+            <label>ketchup</label>
+            <br>
+
+            <input name="liquid" type="radio" value="orange juice" id = "liquid">
+            <label>orange juice</label>
+         </div>
+        </fieldset>
+
+        <fieldset>
+          <label for="adjective">Adjective:</label>
+          <input type="text" name="adjective" id="adjective" required>
+        </fieldset>
+
+        <fieldset>
+          <label for="verb1">Verb:</label>
+          <input type="text" name="verb1" id="verb1" required>
+        </fieldset>
+
+        <fieldset>
+          <label for="color">Color:</label>
+          <input type="text" name="color" id="color" required>
+        </fieldset>
+
+        <fieldset>
+          <label for="verb2">Verb ending in "ly":</label>
+          <input type="text" name="verb2" id="verb2" required>
+        </fieldset>
+
+        <fieldset>
+          <label for="noun">Noun (plural):</label>
+          <input type="text" name="noun" id="noun" required>
+        </fieldset>
+
+        <fieldset>
+          <label for="tool">Choose a tool!</label>
+          <div>
+            <input name="tool" type="radio" value="axe" id = "tool">
+            <label>axe</label>
+            <br>
+
+            <input name="tool" type="radio" value="baseball bat" id = "tool">
+            <label>baseball bat</label>
+            <br>
+
+            <input name="tool" type="radio" value="sword" id = "tool">
+            <label>sword</label>
+         </div>
+        </fieldset>
+
+        <fieldset>
+          <label for="verb3">Verb:</label>
+          <input type="text" name="verb3" id="verb3" required>
+        </fieldset>
+
+        <fieldset id = "submission">
+          <div>
+            <input type="reset" name="reset" value="clear all fields">
+            <input type="submit" name="submit" value="show me my masterpiece!" id = "s">
+          </div>
+        </fieldset>
+      </form>
+    </section>
+
+    <section id = "finalProduct">
+      <div id = "mySketch" class = 'hide'></div>
+      <p id = "myMsg"></p>
+    </section>
+    </section>
+
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="mailto:aragarwala@ucdavis.edu">email me</a></li>
+          <li><a href="https://validator.w3.org/check?uri=referer">valid html5</a></li>
+          <li><a href="https://jigsaw.w3.org/css-validator/check/referer">valid css</a></li>
+        </ul>
+      </nav>
+    </footer>
+
+    <script src="script.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&subset=cyrillic,latin-ext');
+
+body {
+  width: 100%;
+  height: inherit;
+  font-size: 0.9em;
+  font-family: Helvetica, sans-serif;
+}
+
+header {
+  width: 100%;
+  height: inherit;
+  margin-left: 7.5%;
+  font-size: 1.2em;
+  font-family: "Pacifico", sans-serif;
+}
+
+h1 {
+  margin-top: 4%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#madLib {
+  width: 70%;
+  height: inherit;
+  margin: auto;
+}
+
+#finalProduct {
+  width: 70%;
+  height: inherit;
+  margin: auto;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  margin: auto;
+  position: fixed;
+  bottom: 0;
+}
+
+footer nav {
+  width: 400px;
+  margin: auto;
+}
+
+footer li {
+  float: left;
+  margin: auto;
+  width: 33%;
+  text-align: center;
+}
+
+footer li a {
+  margin: auto;
+  display: block;
+  color: #606060;
+  text-decoration: none;
+}
+
+footer li a:hover {
+  color: #FF6347;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+input[type=submit], input[type=reset] {
+  border: none;
+  width: 48%;
+  color: white;
+  padding: 8px 16px;
+  margin-top: 4px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+}
+
+input[type=reset] {
+  background-color: #FF6347;
+  margin-left: 2px;
+  margin-right: 8px;
+}
+
+input[type=text] {
+  padding: 2px;
+  width: 60%;
+}
+
+form {
+  background-color: #F0F0F0;
+  padding: 2%;
+}
+
+fieldset {
+  border: solid 0.5px #A8A8A8;
+  border-bottom: none;
+}
+
+#submission {
+  border-bottom: solid 0.5px #A8A8A8;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: grid;
+}
