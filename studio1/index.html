@@ -14,7 +14,7 @@
 
     <header>
       <h1>Painting with Bob</h1>
-      <img src="images/bob.png" alt="bob" width="500px" height="660px">
+      <img src="images/bob.png" alt="bob" width="500px" height="700px">
     </header>
 
     <section class = "container">
@@ -28,15 +28,15 @@
         <fieldset>
           <label for="liquid">Choose a liquid!</label>
           <div>
-            <input name="liquid" type="radio" value="soda" id = "liquid">
+            <input name="liquid" type="radio" id = "liquid" required>
             <label>soda</label>
             <br>
 
-            <input name="liquid" type="radio" value="ketchup" id = "liquid">
+            <input name="liquid" type="radio" id = "liquid" required>
             <label>ketchup</label>
             <br>
 
-            <input name="liquid" type="radio" value="orange juice" id = "liquid">
+            <input name="liquid" type="radio" id = "liquid" required>
             <label>orange juice</label>
          </div>
         </fieldset>
@@ -69,15 +69,15 @@
         <fieldset>
           <label for="tool">Choose a tool!</label>
           <div>
-            <input name="tool" type="radio" value="axe" id = "tool">
+            <input name="tool" type="radio" id = "tool" required>
             <label>axe</label>
             <br>
 
-            <input name="tool" type="radio" value="baseball bat" id = "tool">
+            <input name="tool" type="radio" id = "tool" required>
             <label>baseball bat</label>
             <br>
 
-            <input name="tool" type="radio" value="sword" id = "tool">
+            <input name="tool" type="radio" id = "tool" required>
             <label>sword</label>
          </div>
         </fieldset>
@@ -90,13 +90,13 @@
         <fieldset id = "submission">
           <div>
             <input type="reset" name="reset" value="clear all fields">
-            <input type="submit" name="submit" value="show me my masterpiece!" id = "s">
+            <input type="submit" name="submit" value="time to paint!" id = "s">
           </div>
         </fieldset>
       </form>
     </section>
 
-    <section id = "finalProduct" class = 'hide'>
+    <section id = "finalProduct" class = "hide">
       <div id = "mySketch"></div>
       <p id = "myMsg"></p>
     </section>

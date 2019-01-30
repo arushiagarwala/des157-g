@@ -18,7 +18,7 @@ function processForm(evt) {
   var painting = document.querySelector('#finalProduct');
 
   var myMsg = document.querySelector('#myMsg');
-  myMsg.innerHTML = 'Start by mixing a ' + measurement + ' of ' + liquid + ' and equal parts water to create a wash for the background. Apply this wash to the canvas using ' + adjective + ' strokes. Next, take another brush, and ' + verb1 + ' it in some ' + colr + ' paint. Apply this to the canvas as ' + verb2 + ' as you can. Add in ' + noun + ' with your ' + tool + '. Don’t forget; ' + verb3 + ' your painting with pride!';
+  myMsg.innerHTML = 'Start by mixing a <strong>' + measurement + '</strong> of <strong>' + liquid + '</strong> and equal parts water to create a wash for the background. Apply this wash to the canvas using <strong>' + adjective + '</strong> strokes. Next, take another brush, and <strong>' + verb1 + '</strong> it in some <strong>' + colr + '</strong> paint. Apply this to the canvas as <strong>' + verb2 + '</strong> as you can. Add in <strong>' + noun + '</strong> with your <strong>' + tool + '</strong>. Don’t forget; <strong>' + verb3 + '</strong> your painting with pride!';
 
   painting.className = 'show';
   evt.preventDefault();

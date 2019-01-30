@@ -1,22 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico&subset=cyrillic,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Kalam:400,700');
 
 body {
   width: 100%;
   height: inherit;
   font-size: 0.9em;
-  font-family: Helvetica, sans-serif;
+  font-family: "Kalam", sans-serif;
+  background-color: #fff;
   background-image: url('images/background.png');
+  background-repeat: repeat-y;
+  background-size: 100%;
 }
 
 header {
   width: 100%;
   height: inherit;
-  margin-left: 7.5%;
-  font-size: 1.2em;
-  font-family: "Pacifico", sans-serif;
 }
 
 h1 {
+  padding-left: 7.5%;
+  font-size: 2.4em;
+  font-family: "Pacifico", sans-serif;
   padding-top: 5%;
   padding-bottom: 1%;
   margin: 0;
@@ -25,11 +29,14 @@ h1 {
 header img {
   position: absolute;
   top: -2%;
-  right: 44%;
+  right: 38%;
   z-index: -1;
 }
 
 p {
+  width: 91%;
+  font-family: "Kalam", sans-serif;
+  font-size: 1.1em;
   background-color: #F0F0F0;
   padding: 4%;
   border: solid #DCDCDC 1px;
@@ -53,17 +60,16 @@ p {
 }
 
 footer {
-  width: 100%;
+  width: 50%;
   height: 45px;
-  margin: auto;
-  background-color: white;
-  position: fixed;
-  bottom: 0;
 }
 
 footer nav {
-  width: 400px;
+  width: 50%;
   margin: auto;
+  margin-top: 4%;
+  border-top: #212f47 solid 1px;
+  overflow: hidden;
 }
 
 footer li {
@@ -76,12 +82,12 @@ footer li {
 footer li a {
   margin: auto;
   display: block;
-  color: #606060;
+  color: #212f47;
   text-decoration: none;
 }
 
 footer li a:hover {
-  color: #FF6347;
+  color: #4CAF50;
 }
 
 ul {
@@ -93,24 +99,26 @@ input[type=submit], input[type=reset] {
   border: none;
   width: 48%;
   color: white;
-  padding: 8px 16px;
+  padding: 10px 20px;
   margin-top: 4px;
   text-decoration: none;
   cursor: pointer;
 }
 
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color: #4CAF50;align-items:baseline;
+  margin-left: 2px;
 }
 
 input[type=reset] {
   background-color: #FF6347;
   margin-left: 2px;
-  margin-right: 8px;
+  margin-right: 6px;
 }
 
 input[type=text] {
-  padding: 2px;
+  padding-left: 4px;
+  padding-top: 4px;
   width: 60%;
 }
 
@@ -122,6 +130,12 @@ form {
 fieldset {
   border: solid 0.5px #A8A8A8;
   border-bottom: none;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+fieldset div {
+  margin-top: 5px;
 }
 
 #submission {
@@ -138,9 +152,11 @@ fieldset {
 }
 
 .hide {
-  display: none;
+  opacity:0;
+  transition:all 2s;
 }
 
 .show {
-  display: grid;
+  opacity:1;
+  transition:all 2s;
 }
