@@ -102,3 +102,7 @@ footer li a {
   display: block;
   color: white;
 }
+
+section li {
+  margin-bottom: 10px;
+}
