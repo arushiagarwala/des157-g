@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+section.items {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  max-width: 768px;
+  margin: auto;
+}
+
+div.item {
+  width: 100%;
+  height: 224px;
+  max-width: 256px;
+  background-color: #DDA0DD;
+  border-bottom: 1px solid #fff;
+}
+
+#glasses, #headphones {
+  border-right: 1px solid #fff;
+}
+
+div.me {
+  width: 100%;
+  height: 750px;
+  max-width: 768px;
+  margin: auto;
+}
+
+footer {
+  width: 100%;
+  max-width: 768px;
+  height: 50px;
+  background-color: #9370DB;
+  margin: auto;
+}
+
+footer nav {
+  display: grid;
+  width: 100%;
+  max-width: 768px;
+  margin: auto;
+}
+
+footer ul {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+footer li {
+  margin: auto;
+  display: inline-grid;
+  text-align: center;
+  text-decoration: none;
+}
+
+footer li a {
+  margin: auto;
+  display: block;
+  color: white;
+  text-decoration: none;
+}

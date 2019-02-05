@@ -7,13 +7,13 @@ document.querySelector("#s").addEventListener('click', processForm, setup, draw)
 function processForm(evt) {
   console.log('in processForm');
   var measurement = document.querySelector('#measurement').value;
-  var liquid = document.querySelector('#liquid').value;
+  var liquid = document.querySelector('input[name="liquid"]:checked').value;
   var adjective = document.querySelector('#adjective').value;
   var verb1 = document.querySelector('#verb1').value;
   var colr = document.querySelector('#colr').value;
   var verb2 = document.querySelector('#verb2').value;
   var noun = document.querySelector('#noun').value;
-  var tool = document.querySelector('#tool').value;
+  var tool = document.querySelector('input[name="tool"]:checked').value;
   var verb3 = document.querySelector('#verb3').value;
   var painting = document.querySelector('#finalProduct');
 
