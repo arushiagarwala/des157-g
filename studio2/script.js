@@ -7,6 +7,8 @@ var headphones = document.querySelector('#headphones');
 var necklace = document.querySelector('#necklace');
 var me = document.querySelector('#me');
 var gOn = false, hOn = false, nOn = false;
+var music = document.querySelector('#music');
+var display = false;
 
 glasses.addEventListener('mouseover', function() {
   glasses.src = 'images/glasses-hover.png';
@@ -44,6 +46,14 @@ function chooseGlasses() {
 }
 
 function chooseHeadphones() {
+  if (display == false) {
+    music.className = 'show';
+    display = true;
+  } else {
+    music.className = 'hide';
+    display = false;
+  }
+
   if (hOn == false) {
     hOn = true;
   } else {

@@ -2,63 +2,140 @@
   box-sizing: border-box;
 }
 
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: arial, sans-serif;
+  font-size: 0.8em;
+  background-image: url('images/background.png');
+  background-size: cover;
+  background-repeat: repeat-y;
+}
+
 section.items {
   width: 100%;
   display: grid;
   grid-template-columns: auto auto auto;
   max-width: 768px;
   margin: auto;
+  border: solid 1px #E9FFF4;
+  border-top: solid 0.25px #E9FFF4;
 }
 
-div.item {
+.item {
+  background-color: #EED2EE	;
+  border: solid 1px #E9FFF4;
+}
+
+#glasses, #headphones, #necklace, #me {
   width: 100%;
-  height: 224px;
-  max-width: 256px;
-  background-color: #DDA0DD;
-  border-bottom: 1px solid #fff;
+  height: auto;
 }
 
-#glasses, #headphones {
-  border-right: 1px solid #fff;
-}
-
-div.me {
-  width: 100%;
-  height: 750px;
+#me {
   max-width: 768px;
-  margin: auto;
 }
 
 footer {
   width: 100%;
   max-width: 768px;
-  height: 50px;
+  height: 44px;
   background-color: #9370DB;
   margin: auto;
+  margin-top: -3px;
 }
 
 footer nav {
-  display: grid;
-  width: 100%;
-  max-width: 768px;
+  width: 70%;
   margin: auto;
 }
 
-footer ul {
-  display: grid;
-  grid-template-columns: auto auto auto;
+ul {
+  width: 100%;
+  height: 44px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 footer li {
+  float: left;
   margin: auto;
-  display: inline-grid;
+  width: 33%;
   text-align: center;
-  text-decoration: none;
+  line-height: 44px;
 }
 
 footer li a {
+  text-decoration: none;
   margin: auto;
   display: block;
-  color: white;
-  text-decoration: none;
+  color: #E9FFF4;
+}
+
+iframe {
+  width: 166px;
+  background-color: darkgrey;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: grid;
+  position: absolute;
+  top: 380px;
+}
+
+@media only screen and (min-width: 769px) {
+   body {
+     max-width: 772px;
+     margin: auto;
+     display: grid;
+     grid-template-columns: auto auto;
+     padding-top: 1%;
+   }
+
+   section.items {
+     height: 300px;
+     grid-template-columns: auto;
+     grid-template-rows: auto auto auto;
+     margin: 0;
+   }
+
+   .item {
+     float: right;
+     border-top: 1px solid #E9FFF4;
+     max-width: 140px;
+     min-width: 140px;
+   }
+
+   #me {
+     max-width: 630px;
+   }
+
+   #glasses {
+     border-top: 0;
+   }
+
+   .me {
+     max-height: 672px;
+   }
+
+   footer {
+     margin: 0;
+     width: 630px;
+   }
+
+   .show {
+     display: grid;
+     position: absolute;
+     top: 510px;
+   }
+
+   iframe {
+     width: 300px;
+   }
 }
