@@ -65,6 +65,7 @@ header {
 
 canvas {
   padding: 20px;
+  z-index: 11;
 }
 
 p {
@@ -78,9 +79,42 @@ p {
 
 footer {
   width: 100%;
+  height: 50px;
   background-color: #2196F3;
   display: grid;
-  margin-top: 4%;
+  margin-top: 2%;
+  padding: 5px;
+}
+
+footer div {
+  width: 60%;
+  height: 40px;
+  float: left;
+}
+
+footer nav {
+  width: 40%;
+  height: 40px;
+  float: right;
+  line-height: 10px;
+}
+
+footer li {
+  float: left;
+  margin: auto;
+  width: 33%;
+  text-align: center;
+}
+
+footer li a {
+  margin: auto;
+  display: block;
+  color: white;
+}
+
+ol,ul {
+    padding: 0;
+    list-style-type: none;
 }
 
 .hide {
