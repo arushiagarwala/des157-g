@@ -190,17 +190,21 @@ function chooseBeverage() {
 }
 
 var footprint = document.querySelector('#footprint');
-var button = document.querySelector('#getfoot');
+var button = document.querySelector('#getFoot');
+
+button.addEventListener('click', function() {
+  footprint.style.display = 'grid';
+});
 
 // the code below is taken from: https://www.chartjs.org/docs/latest/
 
-var ctx = document.getElementById("myChart").getContext('2d');
+var ctx = document.getElementById("myChart");
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        labels: ["Spinach", "Beef", "Chicken", "Kale", "Cheese", "Bread"],
         datasets: [{
-            label: '# of Votes',
+            label: '$$ per Calorie',
             data: [12, 19, 3, 5, 2, 3],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',

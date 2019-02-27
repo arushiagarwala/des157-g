@@ -56,6 +56,24 @@ header {
 
 #footprint {
   display: none;
+  position: fixed;
+  bottom: 25%;
+  right: 25%;
+  width: 600px;
+  height: 400px;
+}
+
+canvas {
+  padding: 20px;
+}
+
+p {
+  margin-left: 20px;
+}
+
+.foot {
+  background-color: white;
+  width: 600px;
 }
 
 footer {
