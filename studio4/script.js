@@ -190,10 +190,27 @@ function chooseBeverage() {
 }
 
 var footprint = document.querySelector('#footprint');
-var button = document.querySelector('#getFoot');
+var fbutton = document.querySelector('#getFoot');
+var rbutton = document.querySelector('#refresh');
 
-button.addEventListener('click', function() {
+fbutton.addEventListener('click', function() {
   footprint.style.display = 'grid';
+});
+
+fbutton.addEventListener('mouseover', function() {
+  fbutton.style.backgroundColor = '#FF7F50';
+});
+
+fbutton.addEventListener('mouseout', function() {
+  fbutton.style.backgroundColor = '#2196F3';
+});
+
+rbutton.addEventListener('mouseover', function() {
+  rbutton.style.backgroundColor = '#FF7F50';
+});
+
+rbutton.addEventListener('mouseout', function() {
+  rbutton.style.backgroundColor = '#2196F3';
 });
 
 // the code below is taken from: https://www.chartjs.org/docs/latest/
