@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+  display: grid;
+}
+
+header {
+  display: block;
+  width: 100%;
+  height: 10%;
+  font-size: 1em;
+}
+
+.wrapper {
+  display: grid;
+}
+
+#menu {
+  width: 50%;
+  height: auto;
+  max-height: 500px;
+  display: grid;
+  grid-template-rows: 95% 5%;
+  float: left;
+  margin-right: 2%;
+}
+
+#ingredients {
+  display: block;
+  overflow-x: scroll;
+  white-space: nowrap;
+  /*border: solid 1px #d3d3d3;*/
+}
+
+#submission {
+  float: left;
+  margin-top: 2%;
+}
+
+button {
+  color: #fff;
+  background-color: #2196F3;
+  border: none;
+  font-size: .95em;
+}
+
+#getFoot {
+  width: 30%;
+  height: 300%;
+}
+
+#refresh {
+  width: 30%;
+  height: 300%;
+}
+
+#ingredients img {
+  display: block;
+  width: 32%;
+  margin: 0.4%;
+  height: auto;
+  float: left;
+  background-color: #F0F0F0;
+}
+
+#sandwich {
+  display: block;
+  background-color: #2196F3;
+  width: 48%;
+  height: auto;
+  float: left;
+}
+
+#plate {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+#footprint {
+  display: grid;
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  background-color: white;
+}
+
+canvas {
+  padding: 20px;
+  z-index: 11;
+}
+
+p {
+  margin-left: 20px;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #2196F3;
+  display: grid;
+  margin-top: 2%;
+  padding: 5px;
+}
+
+footer nav {
+  width: 40%;
+  height: 40px;
+  float: right;
+  line-height: 10px;
+}
+
+footer li {
+  float: left;
+  margin: auto;
+  width: 33%;
+  text-align: center;
+}
+
+footer li a {
+  margin: auto;
+  display: block;
+  color: white;
+}
+
+ol,ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  width: 25%;
+  height: inherit;
+  display: block;
+  position: fixed;
+  left: 59%;
+}
+
+.stay {
+  position: relative;
+  left: 0;
+  opacity: 1;
+}
+
+.disappear {
+  position: relative;
+  left: -60%;
+  transition: all 3s;
+  opacity: 0;
+}
+
+.left {
+  position: relative;
+  left: -52%;
+  transition: all 3s;
+}
+
+.transparent {
+  opacity: 0;
+}
+
+.opaque {
+  opacity: 1;
+  transition: all 3s;
+  transition-delay: 2s;
+}

@@ -1,0 +1,78 @@
+<!Doctype html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Make yourself a sandwich!</title>
+    <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
+    <link rel = "stylesheet" href = "style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
+  </head>
+
+  <body class='container'>
+
+    <header>
+      <h1>Make yourself a sandwich</h1>
+    </header>
+
+    <section id='wrapper'>
+    <section id='menu' class='stay'>
+      <div id='ingredients'>
+        <img src='images/wheat-bread.png' alt='wheat bread' width='250' height='250' id='wheat-bread'>
+        <img src='images/white-bread.png' alt='white bread' width='250' height='250' id='white-bread'>
+        <img src='images/beef-patty.png' alt='beef patty' width='250' height='250' id='beef'>
+        <img src='images/chicken-patty.png' alt='chicken patty' width='250' height='250' id='chicken'>
+        <img src='images/cold-cut.png' alt='cold cuts' width='250' height='250' id='cold-cut'>
+        <img src='images/salami.png' alt='salami' width='250' height='250' id='salami'>
+        <img src='images/kale.png' alt='kale' width='250' height='250' id='kale'>
+        <img src='images/spinach.png' alt='spinach' width='250' height='250' id='spinach'>
+        <img src='images/tomato.png' alt='tomato' width='250' height='250' id='tomato'>
+        <img src='images/cheddar.png' alt='cheddar' width='250' height='250' id='cheddar'>
+        <img src='images/almond-milk.png' alt='almond milk' width='250' height='250' id='almond'>
+        <img src='images/orange-juice.png' alt='orange juice' width='250' height='250' id='orange'>
+      </div>
+      <div id='submission'>
+        <button type='button' id='getFoot'>my footprint!</button>
+        <button type='button' id='refresh'>refresh</button>
+      </div>
+    </section>
+
+    <section id='sandwich' class='stay'>
+      <img src='images/s1.png' alt='wheat bread' width='200' height='40' id='s0' class='hide'>
+      <img src='images/s2.png' alt='white bread' width='200' height='40' id='s1' class='hide'>
+      <img src='images/s3.png' alt='beef patty' width='200' height='40' id='s2' class='hide'>
+      <img src='images/s4.png' alt='chicken patty' width='200' height='40' id='s3' class='hide'>
+      <img src='images/s5.png' alt='cold cuts' width='200' height='40' id='s4' class='hide'>
+      <img src='images/s6.png' alt='salami' width='200' height='40' id='s5' class='hide'>
+      <img src='images/s7.png' alt='kale' width='200' height='40' id='s6' class='hide'>
+      <img src='images/s8.png' alt='spinach' width='200' height='40' id='s7' class='hide'>
+      <img src='images/s9.png' alt='tomato' width='200' height='40' id='s8' class='hide'>
+      <img src='images/s10.png' alt='cheddar cheese' width='200' height='40' id='s9' class='hide'>
+      <img src='images/plate.png' alt='plate' width='400' height='100' id='plate'>
+    </section>
+
+    <section id='footprint' class='transparent'>
+      <canvas id='myChart' width='500' height='500'>
+        <p>Chart goes here</p>
+      </canvas>
+      <div>
+        <p>Some text about why this information is relevant.</p>
+      </div>
+    </section>
+    </section>
+
+    <footer id='myInfo' class='stay'>
+        <nav>
+          <ul>
+            <li><a href="mailto:aragarwala@ucdavis.edu">email me</a></li>
+            <li><a href="https://validator.w3.org/check?uri=referer">valid html5</a></li>
+            <li><a href="https://jigsaw.w3.org/css-validator/check/referer">valid css</a></li>
+          </ul>
+        </nav>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+
+</html>
