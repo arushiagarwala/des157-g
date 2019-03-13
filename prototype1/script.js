@@ -29,6 +29,8 @@ var s8 = document.querySelector('#s8');
 var s9 = document.querySelector('#s9');
 var slices = [];
 var zindex = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
+var backgroundColors = [];
+var borderColors = [];
 
 changeState(wheat);
 changeState(white);
@@ -54,14 +56,14 @@ function changeState(ingredient) {
   ingredient.addEventListener('mouseout', function() {
     if (ingredient.style.backgroundColor == 'rgb(33, 150, 243)') {
     } else {
-      ingredient.style.backgroundColor = '#F0F0F0';
+      ingredient.style.backgroundColor = '#fff';
     }
   });
 
   ingredient.addEventListener('click', function() {
     var bodyID = ingredient.id;
     if (ingredient.style.backgroundColor == 'rgb(33, 150, 243)') {
-      ingredient.style.backgroundColor = '#F0F0F0';
+      ingredient.style.backgroundColor = '#fff';
       removeSlice(bodyID);
     } else {
       ingredient.style.backgroundColor = '#2196F3';
@@ -73,31 +75,50 @@ function changeState(ingredient) {
 function makeSlice(id) {
   if (id == 'wheat-bread') {
     slices.push(s0);
+    backgroundColors.push('rgba(150, 122, 75, 0.4)');
+    borderColors.push('rgba(150, 122, 75, 1)');
   } else if (id == 'white-bread') {
     slices.push(s1);
+    backgroundColors.push('rgba(229, 206, 167, 0.4)');
+    borderColors.push('rgba(229, 206, 167, 1)');
   } else if (id == 'beef') {
     slices.push(s2);
+    backgroundColors.push('rgba(61, 21, 15, 0.4)');
+    borderColors.push('rgba(61, 21, 15, 1)');
   } else if (id == 'chicken') {
     slices.push(s3);
+    backgroundColors.push('rgba(117, 60, 4, 0.4)');
+    borderColors.push('rgba(117, 60, 4, 1)');
   } else if (id == 'cold-cut') {
     slices.push(s4);
+    backgroundColors.push('rgba(183, 77, 114, 0.4)');
+    borderColors.push('rgba(183, 77, 114, 1)');
   } else if (id == 'salami') {
     slices.push(s5);
+    backgroundColors.push('rgba(132, 33, 18, 0.4)');
+    borderColors.push('rgba(132, 33, 18, 1)');
   } else if (id == 'kale') {
     slices.push(s6);
+    backgroundColors.push('rgba(3, 38, 1, 0.4)');
+    borderColors.push('rgba(3, 38, 1, 1)');
   } else if (id == 'spinach') {
     slices.push(s7);
+    backgroundColors.push('rgba(23, 112, 17, 0.4)');
+    borderColors.push('rgba(23, 112, 17, 1)');
   } else if (id == 'tomato') {
     slices.push(s8);
+    backgroundColors.push('rgba(188, 46, 11, 0.4)');
+    borderColors.push('rgba(188, 46, 11, 1)');
   } else if (id == 'cheddar') {
     slices.push(s9);
+    backgroundColors.push('rgba(224, 115, 13, 0.4)');
+    borderColors.push('rgba(224, 115, 13, 1)');
   } else if (id == 'almond') {
     chooseBeverage();
   } else if (id == 'orange') {
     chooseBeverage();
   }
   positionSlice();
-  console.log(slices);
 }
 
 function removeSlice(id) {
@@ -182,6 +203,8 @@ function positionSlice() {
 function doSplice(index) {
   slices[index].className = 'hide';
   slices.splice(index, 1);
+  backgroundColors.splice(index, 1);
+  borderColors.splice(index, 1);
   positionSlice();
 }
 
@@ -202,6 +225,10 @@ fbutton.addEventListener('click', function() {
   sandwich.className = 'left';
   footprint.className = 'opaque';
   footer.className = 'disappear';
+  for (var i = 0; i < slices.length; i++) {
+    slices[i].className = 'sandwichShift';
+  }
+  formatChart(slices);
 });
 
 fbutton.addEventListener('mouseover', function() {
@@ -222,30 +249,17 @@ rbutton.addEventListener('mouseout', function() {
 
 // the code below is taken from: https://www.chartjs.org/docs/latest/
 
+var ingredients = [];
+
 var ctx = document.getElementById("myChart");
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ["Spinach", "Beef", "Chicken", "Kale", "Cheese", "Bread"],
         datasets: [{
             label: '$$ per Calorie',
             data: [12, 19, 3, 5, 2, 3],
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255,99,132,1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
+            backgroundColor: backgroundColors,
+            borderColor: borderColors,
             borderWidth: 1
         }]
     },
@@ -259,3 +273,13 @@ var myChart = new Chart(ctx, {
         }
     }
 });
+
+function formatChart(s) {
+  for (var i = 0; i < s.length; i++) {
+    ingredients.push(s[i].alt);
+  }
+  for (var i = 0; i < ingredients.length; i++) {
+    myChart.data.labels.push(ingredients[i]);
+    myChart.update();
+  }
+}
