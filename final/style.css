@@ -144,6 +144,7 @@ footer {
   height: 30px;
   display: grid;
   font-family: 'Shadows Into Light Two', cursive;
+  font-size: 0.8em;
 }
 
 footer nav {
@@ -162,11 +163,15 @@ footer li {
 footer li a {
   margin: auto;
   display: block;
+  text-decoration: none;
+}
+
+a {
   color: #2196F3;
   text-decoration: none;
 }
 
-footer li a:hover {
+a:hover {
   color: #FF7F50;
 }
 
@@ -280,6 +285,7 @@ ol,ul {
   padding-right: 3%;
   font-family: arial, sans-serif;
   font-size: 0.8em;
+  padding-bottom: 2%;
 }
 
 #infoLink {

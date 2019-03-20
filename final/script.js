@@ -459,11 +459,19 @@ function makeSlicesHoverable(s) {
           }
           extraInfo.className = 'opaque2';
           title.innerHTML = 'Beef';
-          info.innerHTML = 'Beef is one of the most if not THE most environmentally dangerous animal/food product on the market. If everyone cut out their beef consumption and replaced it with white meat such as chicken, a significant amount of energy and resources would be saved';
+          info.innerHTML = 'Beef is one of the most if not THE most environmentally dangerous animal/food product on the market. If everyone cut out their beef consumption and replaced it with white meat such as chicken, a significant amount of energy and resources would be saved.';
           infoLink.href = 'http://www.greeneatz.com/foods-carbon-footprint.html';
         });
       } else if (s[i].id == 's3') {
-
+        s[i].addEventListener('click', function() {
+          if (chartMode == false) {
+            return;
+          }
+          extraInfo.className = 'opaque2';
+          title.innerHTML = 'Chicken';
+          info.innerHTML = 'Chicken is one of the most environmentally friendly meats. However, research shows that cutting out meat entirely might be even more beneficial for the environment. Many people are loathe to cut meat out of thier diets because of the excess of protein meat provides. Many people do not realize that there are indeed alternatives to meat, such as chickpeas or kidney beans.';
+          infoLink.href = 'https://www.ecowatch.com/15-best-protein-alternatives-to-meat-besides-tofu-1882106660.html';
+        });
       } else if (s[i].id == 's4') {
 
       } else if (s[i].id == 's5') {
