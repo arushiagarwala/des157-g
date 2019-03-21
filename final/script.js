@@ -30,6 +30,7 @@ var s8 = document.querySelector('#s8');
 var s9 = document.querySelector('#s9');
 var slices = [];
 var zindex = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16'];
+var space;
 var andiScore = [];
 var gasEmissions = [];
 var chartLabels = [];
@@ -238,7 +239,7 @@ function removeSlice(id) {
 }
 
 function positionSlice() {
-  var space = 25;
+  space = 25;
 
   for (var i = 0; i < slices.length; i++) {
     slices[i].className = 'show';
@@ -267,6 +268,7 @@ var fbutton = document.querySelector('#getFoot');
 var rbutton = document.querySelector('#refresh');
 var menu = document.querySelector('#menu');
 var sandwich = document.querySelector('#sandwich');
+var cover = document.querySelector('#cover');
 var wrapper = document.querySelector('#wrapper');
 var footer = document.querySelector('#myInfo');
 var back = document.querySelector('#back');
@@ -297,6 +299,7 @@ fbutton.addEventListener('click', function() {
     console.log('Choose ingredients to make a sandwich! To find the carbon footprint of the sandwich you made, click "my footprint!".');
     return;
   }
+  addCoverSlice(slices);
   menu.className = 'disappear';
   sandwich.className = 'left';
   footprint.className = 'opaque';
@@ -352,6 +355,7 @@ back.addEventListener('click', function() {
   sandwich.className = 'right';
   footprint.className = 'transparent';
   footer.className = 'stay';
+  cover.className = 'hide';
 });
 
 back.addEventListener('mouseover', function() {
@@ -486,4 +490,11 @@ function makeSlicesHoverable(s) {
 
       }
   }
+}
+
+function addCoverSlice(s) {
+  cover.src = s[0].src;
+  cover.className = 'show';
+  cover.style.bottom = (65 + (s.length * space)) + 'px';
+  cover.style.zIndex = zindex[s.length];
 }
