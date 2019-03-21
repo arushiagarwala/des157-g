@@ -477,11 +477,35 @@ function makeSlicesHoverable(s) {
           infoLink.href = 'https://www.ecowatch.com/15-best-protein-alternatives-to-meat-besides-tofu-1882106660.html';
         });
       } else if (s[i].id == 's4') {
-
+        s[i].addEventListener('click', function() {
+          if (chartMode == false) {
+            return;
+          }
+          extraInfo.className = 'opaque2';
+          title.innerHTML = 'Cold Cuts';
+          info.innerHTML = 'Cold cuts are an in between when it comes to nutrition vs environmental impact of meat. Of course, cold cuts tend to be processed, which generally is neither good for the environment or for your health. Of course, they have their benefits as well.';
+          infoLink.href = 'http://www.eatingwell.com/article/290503/are-cold-cuts-healthy/';
+        });
       } else if (s[i].id == 's5') {
-
+        s[i].addEventListener('click', function() {
+          if (chartMode == false) {
+            return;
+          }
+          extraInfo.className = 'opaque2';
+          title.innerHTML = 'Salami';
+          info.innerHTML = 'Salami is also an in between when it comes to nutrition vs environmental impact of meat. However, since it falls under the category of red meat, it should probably be consumed moderately to less than moderately as well.';
+          infoLink.href = 'https://healthyeating.sfgate.com/salami-healthy-1587.html';
+        });
       } else if (s[i].id == 's6') {
-
+        s[i].addEventListener('click', function() {
+          if (chartMode == false) {
+            return;
+          }
+          extraInfo.className = 'opaque2';
+          title.innerHTML = 'Kale';
+          info.innerHTML = 'Kale is one of the most popular leafy greens on the market. But is it as healthy as people seem to think it is? If you look over at the ANDI score of kale, you can see that it beats out its competitors by hundreds. However, is it the most environmentally conscious of the leafy greens? Learn more by visiting the link below.';
+          infoLink.href = 'http://www.greeneatz.com/foods-carbon-footprint.html';
+        });
       } else if (s[i].id == 's7') {
 
       } else if (s[i].id == 's8') {

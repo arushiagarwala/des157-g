@@ -50,14 +50,14 @@ header img {
 #ingredients {
   /*background-color: #f9f4e3;*/
   width: 90%;
-  height: 77.2%;
+  /*height: 77.2%;*/
+  height: 82%;
   display: block;
   overflow-x: scroll;
   white-space: nowrap;
   margin-top: 14%;
   padding-left: 10%;
   padding-top: 1%;
-  /*border: solid 1px #d3d3d3;*/
 }
 
 #submission {
@@ -75,13 +75,15 @@ button {
 }
 
 #getFoot {
-  width: 30%;
+  width: 26%;
   height: 220%;
+  margin-left: 4%;
 }
 
 #refresh {
-  width: 30%;
+  width: 26%;
   height: 220%;
+  margin-left: 1%;
 }
 
 #ingredients img {
