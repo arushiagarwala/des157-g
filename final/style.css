@@ -115,6 +115,7 @@ button {
 
 #background {
   width: 100%;
+  border-radius: 10px;
   height: inherit;
   margin: auto;
 }
