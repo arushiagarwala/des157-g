@@ -5,11 +5,19 @@
   box-sizing: border-box;
 }
 
-.container {
+body {
   width: 85%;
   margin: auto;
   display: grid;
+  background-image: url('images/cover.gif');
+  background-size: contain;
   /*background-color: #f9f4e3;*/
+}
+
+.container2 {
+  transition: background-image 3s ease-in-out;
+  transition-delay: 3s;
+  background-image: url('images/cover2.png');
 }
 
 header {
@@ -26,10 +34,6 @@ header {
 header img {
   width: 100%;
   height: auto;
-}
-
-.wrapper {
-  display: grid;
 }
 
 #menu {
@@ -237,6 +241,12 @@ ol,ul {
 .opaque2 {
   opacity: 1;
   transition: all 2s;
+}
+
+.opaque3 {
+  opacity: 1;
+  transition: all 3s;
+  transition-delay: 6s;
 }
 
 .sandwichShift {

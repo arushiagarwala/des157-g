@@ -39,6 +39,11 @@ var borderColors = [];
 var ctx = document.getElementById("myChart");
 var chartMode = false;
 
+var container = document.querySelector('#container');
+var header = document.querySelector('#head');
+var wrapper = document.querySelector('#wrapper');
+var footer = document.querySelector('#myInfo');
+
 var myChart = new Chart(ctx, {
     type: 'bar',
     options: {
@@ -57,6 +62,15 @@ var myChart = new Chart(ctx, {
         }
     }
 });
+
+loadPage();
+
+function loadPage() {
+  header.className = 'opaque3';
+  wrapper.className = 'opaque3';
+  footer.className = 'opaque3';
+  container.className = 'container2';
+}
 
 changeState(wheat);
 changeState(white);
@@ -269,8 +283,6 @@ var rbutton = document.querySelector('#refresh');
 var menu = document.querySelector('#menu');
 var sandwich = document.querySelector('#sandwich');
 var cover = document.querySelector('#cover');
-var wrapper = document.querySelector('#wrapper');
-var footer = document.querySelector('#myInfo');
 var back = document.querySelector('#back');
 var andi = document.querySelector('#andi');
 var gas = document.querySelector('#gas');
